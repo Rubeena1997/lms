@@ -23,8 +23,8 @@ pipeline {
             steps {
                 echo 'Release Nexus'
                 sh 'rm -rf *.zip'
-                sh 'cd webapp && zip dist-${BUILD_NUMBER}.zip -r dist'
-                sh 'cd webapp && curl -v -u $Username:$Password --upload-file dist-${BUILD_NUMBER}.zip http://54.175.148.193:8081/repository/lms/'
+                sh 'cd webapp && zip dist-lms.zip -r dist'
+                sh 'cd webapp && curl -v -u admin:Rubeena --upload-file dist-lms.zip http://54.175.148.193:8081/repository/lms/'
             }
         }
     }
