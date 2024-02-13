@@ -24,7 +24,7 @@ pipeline {
                 echo 'Release Nexus'
                 sh 'rm -rf *.zip'
                 sh 'cd webapp && zip dist-lms.zip -r dist'
-                sh 'cd webapp && curl -v -u admin:Rubeena --upload-file dist-lms.zip http://54.175.148.193:8081/repository/lms/:8081/repository/lms/'
+                sh 'cd webapp && curl -v -u admin:Rubeena --upload-file dist-lms.zip http://54.175.148.193:8081/repository/lms/'
             }
         }
     }
