@@ -1,11 +1,7 @@
 pipeline {
     agent any
-    environment {
-        // More detail: 
-        // https://jenkins.io/doc/book/pipeline/jenkinsfile/#usernames-and-passwords
-   }
 
-    stages {
+ stages {
         stage('Build') {
             steps {
                 echo 'Building..'
