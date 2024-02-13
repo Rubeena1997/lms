@@ -3,7 +3,6 @@ pipeline {
     environment {
         // More detail: 
         // https://jenkins.io/doc/book/pipeline/jenkinsfile/#usernames-and-passwords
-        NEXUS_CRED = credentials('nexus')
    }
 
     stages {
